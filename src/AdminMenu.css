@@ -1,0 +1,54 @@
+/* AdminMenu.css */
+
+/* Container for the admin menu button */
+.admin-menu-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  /* Admin menu button style */
+  .admin-menu-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .admin-menu-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Dropdown menu container */
+  .admin-menu-dropdown {
+    display: block;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Increased z-index to ensure it's on top */
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+  
+  /* Dropdown menu items */
+  .admin-menu-dropdown ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .admin-menu-dropdown li {
+    padding: 8px 16px;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .admin-menu-dropdown li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  

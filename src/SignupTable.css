@@ -1,0 +1,79 @@
+/* SignupTable.css */
+
+/* Table Container */
+.table-container {
+    overflow-x: auto;
+    max-height: 600px;
+    margin-top: 20px;
+    overflow-y: auto;
+  }
+  
+  /* Table Styles */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed; /* Fixed layout to maintain equal column width */
+  }
+  
+  /* Table Header and Cell Styles */
+  th, td {
+    border: 1px solid #ddd;
+    padding: 4px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  /* Sticky columns for names */
+  .sticky-col {
+    position: sticky;
+    left: 0;
+    background-color: #fff;
+    z-index: 2; /* Higher z-index to stay above table content */
+    font-weight: bold;
+    width: 200px; /* Width for the name column */
+  }
+  
+  /* Sticky header for date row */
+  .sticky-date {
+    position: sticky;
+    top: 0;
+    background-color: #f8f8f8;
+    z-index: 3; /* Highest z-index to stay on top */
+  }
+  
+  /* Sticky header for time cells */
+  .time-header {
+    background-color: #f8f8f8;
+    top: 25px; /* Ensures it sticks just below the date row */
+    position: sticky;
+    z-index: 2; /* Lower than date header */
+    width: 80px; /* Width for the time cells */
+    font-size: 0.8rem;
+  }
+  
+  /* Set equal width for time and checkbox cells */
+  th.time-header, td {
+    width: 80px; /* Ensure equal width for time and checkbox cells */
+  }
+  
+  /* Alternating row colors for clarity */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: white;
+  }
+  
+  /* Checkbox size and spacing */
+  input[type="checkbox"] {
+    width: 15px;
+    height: 20px;
+    transform: scale(1.1); /* Adjust size */
+    margin: 0 5px; /* Add space between checkboxes */
+    padding: 5px; /* Padding for spacing */
+  }
+ /* Highlight row for the logged-in user */
+.highlight-row {
+    background-color: #ffff99 !important; /* Brighter yellow with !important to ensure it applies */
+  }
